@@ -50,7 +50,7 @@ extension NJMediator {
             }
         }
         
-        let actionSelector = NSSelectorFromString("Action_\(actionName)")
+        let actionSelector = Selector("Action_\(actionName)")
         
         guard targetObj != nil, targetObj!.responds(to: actionSelector) else {
             return nil
