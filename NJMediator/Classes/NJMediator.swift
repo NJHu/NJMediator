@@ -25,7 +25,7 @@ extension NJMediator {
     ///   - params: 字典
     ///   - shouldCacheTarget:  是否缓存对象
     /// - Returns: 返回成功或者失败, 或者返回对象, 或者 nil
-    public func perform(nameSpace space: String, target targetName: String, action actionName: String, params: [String: AnyObject]?, shouldCacheTarget: Bool = false) -> AnyObject? {
+    public func perform(nameSpace space: String, target targetName: String, action actionName: String, params: [String: Any]?, shouldCacheTarget: Bool = false) -> AnyObject? {
         
         print(space)
         print(targetName)
